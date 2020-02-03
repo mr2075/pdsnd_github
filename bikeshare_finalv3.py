@@ -38,7 +38,7 @@ def get_filters():
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input("What day do you want to filter by? If no filter, then type All. If you require a filter then type Monday, Tuesday, etc.")
-    day = day[0].upper()+day[1:].lower()
+    day = day.title()
 
 
     print('Day Filter: {}'.format(day))
