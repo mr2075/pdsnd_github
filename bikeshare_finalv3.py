@@ -32,7 +32,7 @@ def get_filters():
     print('Month Filter: {}'.format(month))
     while month not in [0, 1, 2, 3, 4, 5, 6]:
         print ("\nHmm, looks like something is wrong. Make sure to choose your month as a number.\n")
-        month = input("What month do you want to filter by?\n")
+        month = input("\nWhat month do you want to filter by?\n")
         month = int(month)
         print('Month Filter: {}'.format(month))
 
