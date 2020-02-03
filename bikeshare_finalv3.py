@@ -27,18 +27,18 @@ def get_filters():
         city = input("\nWhat city do you want to explore? \n")
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    month = input("What month do you want to filter by? \nChoose a number for month. January = 1, February= 2,... June = 6. If you don\'t want to filter by month, then type 0.\n")
+    month = input("What month do you want to filter by? \nChoose a number for month. i.e. January = 1, February= 2, ... Decemeber = 12. If you don\'t want to filter by month, then type 0.\n")
     month = int(month)
     print('Month Filter: {}'.format(month))
     while month not in [0, 1, 2, 3, 4, 5, 6]:
         print ("\nHmm, looks like something is wrong. Make sure to choose your month as a number.\n")
-        month = input("What month do you want to filter by?\n")
+        month = input("\nWhat month do you want to filter by?\n")
         month = int(month)
         print('Month Filter: {}'.format(month))
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input("What day do you want to filter by? If no filter, then type All. If you require a filter then type Monday, Tuesday, etc.")
-    day = day[0].upper()+day[1:].lower()
+    day = day.title()
 
 
     print('Day Filter: {}'.format(day))
